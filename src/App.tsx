@@ -19,7 +19,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <div className="min-h-screen flex flex-col bg-[#F7F8FA] dark:bg-[#111318] text-[#171923] dark:text-[#F3F4F6] transition-colors duration-200">
             <Header />
             <main className="flex-1 w-full">

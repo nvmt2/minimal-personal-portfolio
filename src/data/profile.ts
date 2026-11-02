@@ -51,5 +51,5 @@ export const PROFILE: ProfileData = {
     'TypeScript',
     'PostgreSQL',
   ],
-  portraitImage: '/src/assets/images/portrait_developer_1793609546397.jpg',
+  portraitImage: `${import.meta.env.BASE_URL}images/portrait_developer_1793609546397.jpg`,
 };

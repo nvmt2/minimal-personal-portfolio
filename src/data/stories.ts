@@ -26,7 +26,7 @@ export const STORIES: Story[] = [
     excerpt: 'In an industry dominated by speed and velocity metrics, we often forget that deep system architecture is an exercise in quiet editorial discernment.',
     publishedDate: 'October 24, 2026',
     readTime: '5 min read',
-    coverImage: '/src/assets/images/story_quiet_reflection_1793609549605.jpg',
+    coverImage: `${import.meta.env.BASE_URL}images/story_quiet_reflection_1793609549605.jpg`,
     category: 'Reflections',
     isFeatured: true,
     content: [
@@ -69,7 +69,7 @@ export const STORIES: Story[] = [
     excerpt: 'One city teaches patience, horizon lines, and contemplative focus; the other teaches urgency, ambition, and the thrill of relentless invention.',
     publishedDate: 'August 16, 2026',
     readTime: '7 min read',
-    coverImage: '/src/assets/images/travel_coastal_cove_1793609549760.jpg',
+    coverImage: `${import.meta.env.BASE_URL}images/travel_coastal_cove_1793609549760.jpg`,
     category: 'Memoir & Space',
     isFeatured: false,
     content: [
@@ -103,7 +103,7 @@ export const STORIES: Story[] = [
     excerpt: 'Why junior engineers look for clever solutions, senior engineers look for simple solutions, and truly great engineers remove the problem entirely.',
     publishedDate: 'May 12, 2026',
     readTime: '6 min read',
-    coverImage: '/src/assets/images/project_cloud_mesh_1793609547944.jpg',
+    coverImage: `${import.meta.env.BASE_URL}images/project_cloud_mesh_1793609547944.jpg`,
     category: 'Philosophy',
     isFeatured: false,
     content: [

@@ -32,7 +32,7 @@ export const TravelWithMePage: React.FC = () => {
           {/* Large Scenic Travel Hero Image */}
           <div className="relative rounded-md border border-[#E2E5EC] dark:border-[#303541] overflow-hidden aspect-[21/9] sm:aspect-[16/7] bg-black/10">
             <img
-              src="/src/assets/images/travel_mountain_pass_1793609549351.jpg"
+              src={`${import.meta.env.BASE_URL}images/travel_mountain_pass_1793609549351.jpg`}
               alt="Mountain Pass Road Expedition"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

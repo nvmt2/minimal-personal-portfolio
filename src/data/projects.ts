@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
       'Built with a high-efficiency .NET Core pipeline, eBPF packet capture, and an ultra-responsive React canvas dashboard. Provides real-time topology mapping, automated anomaly alerts, and distributed trace inspection with zero GC pauses.',
     technologies: ['React', 'TypeScript', 'C# / .NET 9', 'Apache Kafka', 'eBPF', 'Tailwind CSS'],
     isFeatured: true,
-    image: '/src/assets/images/project_cloud_mesh_1793609547944.jpg',
+    image: `${import.meta.env.BASE_URL}images/project_cloud_mesh_1793609547944.jpg`,
     metrics: [
       { label: 'Throughput', value: '1.4M req/min' },
       { label: 'Edge Latency', value: '28ms' },

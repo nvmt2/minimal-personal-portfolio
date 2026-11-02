@@ -43,7 +43,7 @@ export const JOURNEYS: Journey[] = [
     duration: '5 Days / 4 Nights',
     travelStyle: 'Two-Wheeled Road Expedition & High-Pass Trekking',
     season: 'Autumn / October – November',
-    coverImage: '/src/assets/images/travel_mountain_pass_1793609549351.jpg',
+    coverImage: `${import.meta.env.BASE_URL}images/travel_mountain_pass_1793609549351.jpg`,
     shortDescription:
       'Riding the legendary Ma Pi Leng pass carved into vertical limestone walls above the emerald waters of the Nho Que canyon.',
     isFeatured: true,
@@ -85,15 +85,15 @@ export const JOURNEYS: Journey[] = [
     ],
     galleryImages: [
       {
-        url: '/src/assets/images/travel_mountain_pass_1793609549351.jpg',
+        url: `${import.meta.env.BASE_URL}images/travel_mountain_pass_1793609549351.jpg`,
         caption: 'The snaking road approaching Ma Pi Leng viewpoint in golden hour light.',
       },
       {
-        url: '/src/assets/images/story_quiet_reflection_1793609549605.jpg',
+        url: `${import.meta.env.BASE_URL}images/story_quiet_reflection_1793609549605.jpg`,
         caption: 'Quiet morning journal notes before departing the homestay.',
       },
       {
-        url: '/src/assets/images/travel_coastal_cove_1793609549760.jpg',
+        url: `${import.meta.env.BASE_URL}images/travel_coastal_cove_1793609549760.jpg`,
         caption: 'Geological contrasts across Vietnam’s limestone landscapes.',
       },
     ],
@@ -163,7 +163,7 @@ export const JOURNEYS: Journey[] = [
     duration: '4 Days / 3 Nights',
     travelStyle: 'Coastal Kayaking, Snorkeling & Slow Living',
     season: 'Spring / March – June',
-    coverImage: '/src/assets/images/travel_coastal_cove_1793609549760.jpg',
+    coverImage: `${import.meta.env.BASE_URL}images/travel_coastal_cove_1793609549760.jpg`,
     shortDescription:
       'Raw basalt sea columns, turquoise coves untouched by resort crowds, and sunrise coffee over calm fishing harbors.',
     isFeatured: false,
@@ -199,11 +199,11 @@ export const JOURNEYS: Journey[] = [
     ],
     galleryImages: [
       {
-        url: '/src/assets/images/travel_coastal_cove_1793609549760.jpg',
+        url: `${import.meta.env.BASE_URL}images/travel_coastal_cove_1793609549760.jpg`,
         caption: 'The crystalline hidden cove discovered along the Nui Chua coastal trail.',
       },
       {
-        url: '/src/assets/images/portrait_developer_1793609546397.jpg',
+        url: `${import.meta.env.BASE_URL}images/portrait_developer_1793609546397.jpg`,
         caption: 'Reflecting on coastal rhythms between design iterations.',
       },
     ],
@@ -262,7 +262,7 @@ export const JOURNEYS: Journey[] = [
     duration: '3 Days / 2 Nights',
     travelStyle: 'Alpine Trekking & Timber Lodging',
     season: 'Winter / December – February',
-    coverImage: '/src/assets/images/story_quiet_reflection_1793609549605.jpg',
+    coverImage: `${import.meta.env.BASE_URL}images/story_quiet_reflection_1793609549605.jpg`,
     shortDescription:
       'Chasing dramatic golden sunsets over Vietnam’s highest mountain pass and waking up to clouds rolling across timber deck verandas.',
     isFeatured: false,
@@ -298,11 +298,11 @@ export const JOURNEYS: Journey[] = [
     ],
     galleryImages: [
       {
-        url: '/src/assets/images/travel_mountain_pass_1793609549351.jpg',
+        url: `${import.meta.env.BASE_URL}images/travel_mountain_pass_1793609549351.jpg`,
         caption: 'The dramatic serpentine curves across the northern high pass.',
       },
       {
-        url: '/src/assets/images/story_quiet_reflection_1793609549605.jpg',
+        url: `${import.meta.env.BASE_URL}images/story_quiet_reflection_1793609549605.jpg`,
         caption: 'Quiet hearthside tea during winter mist in the timber lodge.',
       },
     ],
