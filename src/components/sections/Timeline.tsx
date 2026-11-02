@@ -27,7 +27,7 @@ export const Timeline: React.FC = () => {
           </div>
 
           {/* Filter segment controls */}
-          <div className="flex items-center gap-1.5 p-1 rounded-md border border-[#E2E5EC] dark:border-[#303541] bg-[#FFFFFF] dark:bg-[#1B1E27] text-xs font-medium">
+          <div hidden={!TIMELINE_ITEMS.some((i) => i.type === 'education')} className="flex items-center gap-1.5 p-1 rounded-md border border-[#E2E5EC] dark:border-[#303541] bg-[#FFFFFF] dark:bg-[#1B1E27] text-xs font-medium">
             <button
               type="button"
               onClick={() => setFilter('all')}

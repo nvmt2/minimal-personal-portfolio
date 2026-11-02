@@ -25,8 +25,8 @@ export const Projects: React.FC = () => {
           </div>
           <p className="text-sm text-[#606779] dark:text-[#A5AABA] max-w-md">
             {lang === 'vi'
-              ? 'Hệ thống phân tán, xử lý dữ liệu vi mô, API chuẩn mực và kiến trúc web hiện đại.'
-              : 'Architectures spanning distributed telemetry, high-throughput systems, and resilient web applications.'}
+              ? 'Các hệ thống quản lý, nền tảng đấu giá và ứng dụng web mà tôi đã tham gia xây dựng.'
+              : 'Management systems, auction platforms, and web applications I have helped build.'}
           </p>
         </div>
 
@@ -48,12 +48,12 @@ export const Projects: React.FC = () => {
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center font-mono text-sm text-[#606779]">
-                    [Architecture Visualization]
+                    {featured.title}
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
                 <div className="absolute bottom-4 left-4 text-xs font-mono text-white/90">
-                  {lang === 'vi' ? 'Nhấp để xem chi tiết kiến trúc' : 'Click to inspect system architecture'}
+                  {lang === 'vi' ? 'Nhấp để xem chi tiết dự án' : 'Click to view project details'}
                 </div>
               </div>
 
@@ -117,18 +117,17 @@ export const Projects: React.FC = () => {
                     onClick={() => setActiveModalProject(featured)}
                     className="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-md bg-[#4F46E5] text-white hover:bg-[#4338CA] dark:bg-[#818CF8] dark:hover:bg-[#6366F1] dark:text-[#111318] transition-colors inline-flex items-center gap-1.5"
                   >
-                    <span>{lang === 'vi' ? 'Xem kiến trúc' : 'Architecture Deep Dive'}</span>
+                    <span>{lang === 'vi' ? 'Chi tiết dự án' : 'Project Details'}</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
-                  <a
-                    href={featured.githubUrl}
+                  {featured.githubUrl && (                  <a href={featured.githubUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="p-2 rounded-md border border-[#E2E5EC] dark:border-[#303541] text-[#171923] dark:text-[#F3F4F6] hover:border-[#4F46E5] dark:hover:border-[#818CF8] transition-colors"
                     aria-label="View source on GitHub"
                   >
                     <Github className="w-4 h-4" />
-                  </a>
+                  </a>)}
                 </div>
               </div>
             </div>
@@ -183,15 +182,14 @@ export const Projects: React.FC = () => {
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </button>
                 <div className="flex items-center gap-2">
-                  <a
-                    href={project.githubUrl}
+                  {project.githubUrl && (                  <a href={project.githubUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="p-1.5 text-[#606779] hover:text-[#171923] dark:hover:text-[#F3F4F6] transition-colors"
                     aria-label="GitHub Repository"
                   >
                     <Github className="w-4 h-4" />
-                  </a>
+                  </a>)}
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
@@ -259,7 +257,7 @@ export const Projects: React.FC = () => {
 
             <div className="space-y-2 pt-2 border-t border-[#E2E5EC] dark:border-[#303541]">
               <p className="text-xs uppercase font-mono tracking-wider text-[#606779] dark:text-[#A5AABA]">
-                Technologies & Architecture
+                Technologies
               </p>
               <div className="flex flex-wrap gap-2">
                 {activeModalProject.technologies.map((t) => (
@@ -274,15 +272,14 @@ export const Projects: React.FC = () => {
             </div>
 
             <div className="flex items-center justify-end gap-3 pt-4 border-t border-[#E2E5EC] dark:border-[#303541]">
-              <a
-                href={activeModalProject.githubUrl}
+              {activeModalProject.githubUrl && (              <a href={activeModalProject.githubUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-md border border-[#E2E5EC] dark:border-[#303541] text-[#171923] dark:text-[#F3F4F6] hover:border-[#4F46E5] inline-flex items-center gap-2"
               >
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
-              </a>
+              </a>)}
               {activeModalProject.liveUrl && (
                 <a
                   href={activeModalProject.liveUrl}

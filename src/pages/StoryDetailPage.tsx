@@ -148,7 +148,7 @@ export const StoryDetailPage: React.FC = () => {
         <div className="pt-10 border-t border-[#E2E5EC] dark:border-[#303541] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <p className="text-sm font-bold text-[#171923] dark:text-[#F3F4F6]">Toi Nguyen</p>
-            <p className="text-xs text-[#606779] dark:text-[#A5AABA]">Software Engineer &amp; Essayist</p>
+            <p className="text-xs text-[#606779] dark:text-[#A5AABA]">Frontend Developer &amp; Essayist</p>
           </div>
           <Link
             to="/travel-with-me"

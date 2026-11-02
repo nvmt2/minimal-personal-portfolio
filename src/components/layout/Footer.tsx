@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
               TOI NGUYEN
             </Link>
             <p className="text-xs text-[#606779] dark:text-[#A5AABA] max-w-sm leading-relaxed">
-              Software Engineer specializing in modern backend architectures (.NET / FastAPI) and responsive React frontends.
+              Frontend Developer with 5+ years of experience building responsive React / Next.js web applications, with C# / .NET backend experience.
             </p>
           </div>
 

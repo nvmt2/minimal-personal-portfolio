@@ -6,7 +6,7 @@ export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    topic: 'Software Engineering Opportunity',
+    topic: 'Frontend Development Opportunity',
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
@@ -194,8 +194,8 @@ export const Contact: React.FC = () => {
                     onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
                     className="w-full px-3.5 py-2.5 text-sm rounded-md border border-[#E2E5EC] dark:border-[#303541] bg-[#F7F8FA] dark:bg-[#111318] text-[#171923] dark:text-[#F3F4F6] focus:border-[#4F46E5] dark:focus:border-[#818CF8] focus:outline-none"
                   >
-                    <option value="Software Engineering Opportunity">Software Engineering Opportunity</option>
-                    <option value="Backend Development (.NET / FastAPI)">Backend Development (.NET / FastAPI)</option>
+                    <option value="Frontend Development Opportunity">Frontend Development Opportunity</option>
+                    <option value="Backend Development (C# / .NET)">Backend Development (C# / .NET)</option>
                     <option value="Frontend Development (React / Next.js)">Frontend Development (React / Next.js)</option>
                     <option value="General Collaboration">General Collaboration</option>
                   </select>

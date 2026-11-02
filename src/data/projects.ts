@@ -8,7 +8,7 @@ export interface Project {
   isFeatured?: boolean;
   image?: string;
   metrics?: { label: string; value: string }[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
   year: string;
   role: string;
@@ -16,62 +16,48 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: 'distributed-telemetry-mesh',
-    title: 'Distributed Telemetry & Edge Mesh',
-    headline: 'High-throughput system observability and distributed tracing for multi-region clusters',
+    id: 'agilityio-studio-management',
+    title: 'Studio Management System',
+    headline: 'Studio management and financial reporting applications at AgilityIO',
     description:
-      'Engineered an event-driven telemetry monitoring control plane processing over 1.4M events/min with sub-30ms global visualization latency.',
+      'Worked directly with clients to analyze requirements, break down tasks, and design and implement a studio management system, while maintaining and optimizing financial reporting applications.',
     longDescription:
-      'Built with a high-efficiency .NET Core pipeline, eBPF packet capture, and an ultra-responsive React canvas dashboard. Provides real-time topology mapping, automated anomaly alerts, and distributed trace inspection with zero GC pauses.',
-    technologies: ['React', 'TypeScript', 'C# / .NET 9', 'Apache Kafka', 'eBPF', 'Tailwind CSS'],
+      'At AgilityIO I collaborate with clients and cross-functional teams to turn business requirements into delivered features, and I keep the financial reporting applications performant and stable. The work spans the full stack, strengthening back-end skills and contributing to a scalable, maintainable system architecture.',
+    technologies: ['C# / .NET', 'SQL Server', 'Azure DevOps'],
     isFeatured: true,
-    image: `${import.meta.env.BASE_URL}images/project_cloud_mesh_1793609547944.jpg`,
-    metrics: [
-      { label: 'Throughput', value: '1.4M req/min' },
-      { label: 'Edge Latency', value: '28ms' },
-      { label: 'Data Accuracy', value: '99.99%' },
-    ],
-    githubUrl: 'https://github.com/toinguyen/telemetry-mesh',
-    liveUrl: 'https://telemetry-mesh.demo.internal',
-    year: '2026',
-    role: 'Lead Architect',
+    year: '2022 — Present',
+    role: 'Full-Stack Web Developer',
   },
   {
-    id: 'docuflow-ai-engine',
-    title: 'DocuFlow Semantic Reasoning Engine',
-    headline: 'Production generative AI document intelligence and reasoning pipeline',
+    id: 'k-artmarket',
+    title: 'K-Art Market Auction Platform',
+    headline: 'Online art auction platform for Korean government projects',
     description:
-      'Architected a multi-modal document extraction and semantic cross-referencing system using Google Gemini 2.5 with strict Zod/Pydantic structured schemas.',
-    technologies: ['Next.js', 'TypeScript', 'Gemini 2.5', 'Vector Search', 'Node.js'],
-    isFeatured: false,
-    githubUrl: 'https://github.com/toinguyen/docuflow-engine',
-    liveUrl: 'https://docuflow.demo.internal',
-    year: '2025',
-    role: 'AI Systems Engineer',
+      'Contributed to the Auction Pictures platform, supporting online art auction presentation and management features with React.',
+    technologies: ['React.js'],
+    liveUrl: 'https://k-artmarket.kr',
+    year: '2020 — 2022',
+    role: 'Front-end Web Developer',
   },
   {
-    id: 'nexus-financial-ledger',
-    title: 'Nexus Financial Consensus Core',
-    headline: 'Immutable event-sourced ledger engine with real-time auditability',
+    id: 'agrion',
+    title: 'Agrion Agricultural Management',
+    headline: 'Agricultural management platform for efficient data and operations',
     description:
-      'Designed an append-only double-entry financial core utilizing CQRS, optimistic concurrency, and PostgreSQL logical replication for institutional transactions.',
-    technologies: ['C# / .NET 9', 'PostgreSQL', 'Redis', 'Docker', 'System Design'],
-    isFeatured: false,
-    githubUrl: 'https://github.com/toinguyen/nexus-core',
-    year: '2025',
-    role: 'Backend Architect',
+      'Developed features for the Agricultural Management platform, enabling efficient data management and operational workflows.',
+    technologies: ['React.js'],
+    liveUrl: 'https://agrion.kr',
+    year: '2020 — 2022',
+    role: 'Front-end Web Developer',
   },
   {
-    id: 'hyperion-ui-system',
-    title: 'Hyperion Minimalist Design System',
-    headline: 'Accessible, tokenized Swiss-inspired component library for web applications',
+    id: 'internal-work-management',
+    title: 'Internal Work Management System',
+    headline: 'Internal tool for team productivity and process tracking',
     description:
-      'Created an ultra-lightweight component architecture prioritizing zero-slop typography, keyboard navigability, and seamless dual-theme token switching.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Radix UI'],
-    isFeatured: false,
-    githubUrl: 'https://github.com/toinguyen/hyperion-ui',
-    liveUrl: 'https://hyperion.demo.internal',
-    year: '2024',
-    role: 'Creator & Maintainer',
+      'Participated in the development and enhancement of an internal work management system to improve team productivity and process tracking.',
+    technologies: ['React.js'],
+    year: '2020 — 2022',
+    role: 'Front-end Web Developer',
   },
 ];

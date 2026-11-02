@@ -35,21 +35,22 @@ export const PROFILE: ProfileData = {
   github: 'https://github.com/minhtoi2799',
   githubHandle: 'minhtoi2799',
   linkedin: 'https://linkedin.com/in/minhtoi',
-  linkedinHandle: 'minhtoi',
-  role: 'Software Engineer',
-  statusText: 'Software Engineer · Available for opportunities',
+  linkedinHandle: 'minhtoi', // TODO: not in CV, confirm real LinkedIn handle
+  role: 'Frontend Developer',
+  statusText: 'Frontend Developer · 5+ years of experience',
   availability: 'Open for work & collaboration',
   heroHeadline: 'Building digital products with purpose.',
-  introduction: 'Software Engineer with expertise in modern Backend and Frontend development.',
+  introduction:
+    'Web developer with 5+ years of experience building responsive web, mobile, and Windows desktop applications.',
   professionalSummary:
-    'Focused on developing reliable, clean, and high-performance applications with C#, .NET, FastAPI, React, Next.js, and TypeScript.',
+    'Experience across Finance, Studio Management, and Agricultural Management domains, working in Agile/Scrum teams on Azure DevOps with international teams from Japan, Korea, and the United States.',
   techTags: [
-    'C# / .NET',
-    'FastAPI',
-    'React',
+    'React.js',
     'Next.js',
     'TypeScript',
-    'PostgreSQL',
+    'Tailwind CSS',
+    'C# / .NET',
+    'SQL Server',
   ],
   portraitImage: `${import.meta.env.BASE_URL}images/portrait_developer_1793609546397.jpg`,
 };
