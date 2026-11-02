@@ -52,5 +52,5 @@ export const PROFILE: ProfileData = {
     'C# / .NET',
     'SQL Server',
   ],
-  portraitImage: `${import.meta.env.BASE_URL}images/portrait_developer_1793609546397.jpg`,
+  portraitImage: `${import.meta.env.BASE_URL}images/portrait.jpg`,
 };
