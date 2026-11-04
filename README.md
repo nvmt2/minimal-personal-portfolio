@@ -2,6 +2,12 @@
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
+## 👋 Xin chào!
+
+Chào mừng bạn đã ghé qua **minimal-personal-portfolio** — góc nhỏ trên internet nơi mình khoe khoang một cách tối giản 😎
+
+Cứ thoải mái lướt, clone, fork, hay để lại một ⭐ nếu thấy vui. Chúc bạn một ngày code không bug (hoặc ít nhất là bug dễ thương)!
+
 # Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
