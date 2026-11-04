@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, ArrowUp, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 import { PROFILE } from '../../data/profile';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -90,20 +90,9 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Bar: Yêu cầu 8 - di chuyển 'Da Nang city, Vietnam · Open for work & collaboration' xuống dưới cùng */}
+        {/* Bottom Bar */}
         <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#606779] dark:text-[#A5AABA]">
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-            <p>© {new Date().getFullYear()} {PROFILE.fullName}. All rights reserved.</p>
-            <span className="hidden sm:inline text-[#E2E5EC] dark:text-[#303541]" aria-hidden="true">|</span>
-            <div className="flex items-center gap-1.5 font-mono text-[#171923] dark:text-[#F3F4F6]">
-              <MapPin className="w-3.5 h-3.5 text-[#4F46E5] dark:text-[#818CF8]" />
-              <span>Da Nang city, Vietnam</span>
-              <span className="text-[#606779] dark:text-[#A5AABA]" aria-hidden="true">·</span>
-              <span className="text-[#4F46E5] dark:text-[#818CF8] font-medium">
-                {lang === 'vi' ? 'Sẵn sàng cho công việc & hợp tác' : 'Open for work & collaboration'}
-              </span>
-            </div>
-          </div>
+          <p>© {new Date().getFullYear()} {PROFILE.fullName}. All rights reserved.</p>
 
           <button
             type="button"
