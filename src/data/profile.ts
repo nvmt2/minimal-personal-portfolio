@@ -39,7 +39,7 @@ export const PROFILE: ProfileData = {
   role: 'Frontend Developer',
   statusText: 'Frontend Developer · 5+ years of experience',
   availability: 'Open for work & collaboration',
-  heroHeadline: 'Building digital products with purpose.',
+  heroHeadline: 'Software engineering',
   introduction:
     'Web developer with 5+ years of experience building responsive web, mobile, and Windows desktop applications.',
   professionalSummary:

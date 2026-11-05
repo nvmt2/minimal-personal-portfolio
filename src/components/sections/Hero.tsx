@@ -42,12 +42,6 @@ export const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Personal Profile & Bio */}
           <div className="lg:col-span-7 space-y-6">
-            {/* Status / Kicker */}
-            <div className="flex items-center gap-2.5 text-xs uppercase tracking-widest text-[#606779] dark:text-[#A5AABA] font-mono">
-              <span className="w-2 h-2 bg-[#4F46E5] dark:bg-[#818CF8]" />
-              <span>{t('hero.role')} · {t('hero.location')}</span>
-            </div>
-
             {/* Main Name & Headline */}
             <div className="space-y-1.5">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#171923] dark:text-[#F3F4F6]">
